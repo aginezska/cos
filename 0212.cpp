@@ -10,5 +10,6 @@ int liczbaLosowa (const int arg1,const int arg2,default_random_engine& e)
 int main(){
     random_device r;
     default_random_engine e1(r());
-    return liczbaLosowa(1,6,e1);
+    cout<<liczbaLosowa(1,6,e1);
+    return 0;
 }
