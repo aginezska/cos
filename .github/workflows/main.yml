@@ -6,4 +6,7 @@ jobs:
         platform: [ubuntu-latest,windows-latest, macos-latest]
     runs-on: ${{ matrix.platform }}
     steps:
-    - run: echo hello world
+    - uses: actions/checkout@v2
+    - run: g++ -o 0212 0212.cpp
+    - run: ./0212
+    - run: ./0212
